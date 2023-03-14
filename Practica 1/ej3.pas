@@ -18,11 +18,13 @@ Type
     apellido: string;
     nombre: string;
     edad: integer;
-    dni: LongInt;
+    dni: string[8];
   End;
   archivo = file Of empleado;
 
-procedure leerEmplead(var emp: empleado);
+procedure leerEmpleado(var emp: empleado);
+var
+  i:integer;
 begin
   Writeln('apellido: ');
   readln(emp.apellido); 
@@ -30,8 +32,12 @@ begin
     Writeln('nombre: ');
     readln(emp.nombre);
     emp.num := random(10000);
+    WriteLn('Numero de empleado: ', emp.num);
     emp.edad := random(82)+18;
-    emp.dni := random(50000);
+    WriteLn('Edad: ', emp.edad);
+    WriteLn('Dni: ');
+    readln(emp.dni);
+    WriteLn(emp.dni);
   end;
 end;
       

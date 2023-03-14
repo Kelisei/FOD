@@ -16,10 +16,12 @@ Type
     apellido: string;
     nombre: string;
     edad: integer;
-    dni: LongInt;
+    dni: String[8];
   End;
   archivo = file Of empleado;
 procedure leerEmplead(var emp: empleado);
+var
+  i:integer;
 begin
   Writeln('apellido: ');
   readln(emp.apellido); 
@@ -27,10 +29,15 @@ begin
     Writeln('nombre: ');
     readln(emp.nombre);
     emp.num := random(10000);
+    WriteLn('Numero de empleado: ', emp.num);
     emp.edad := random(82)+18;
-    emp.dni := random(50000);
+    WriteLn('Edad: ', emp.edad);
+    WriteLn('Dni: ');
+    readln(emp.dni);
+    WriteLn(emp.dni);
   end;
 end;
+
 procedure leerEmpleado2(var emp: empleado);
 begin
   Writeln('apellido: ');
@@ -145,7 +152,7 @@ begin
   Reset(arch);
   while not eof(arch) do begin
     read(arch, aux);
-    if (aux.dni = 00) then
+    if (aux.dni = '00') then
       with aux do
         writeln(nuevo,' ',apellido,' ',nombre,' ',edad,' ',dni,' ',num);
   end;
