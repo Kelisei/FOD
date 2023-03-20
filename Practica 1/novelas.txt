@@ -1,0 +1,6 @@
+1 200.0 Cuento_de_Hadas 
+Caperuzita_Roja
+2 300.0 Cuento_de_Hadas 
+Los_3_chanchitos
+3 420.69 Cuento_corto
+Borgesito
