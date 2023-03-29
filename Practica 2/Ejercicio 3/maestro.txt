@@ -1,0 +1,42 @@
+0 ticcio
+20 5 helados
+55
+1 ilcapo
+19 5 helados
+15
+2 franchini
+200 5 helados
+65
+3 MASSERA
+70 5 helados
+45
+4 plums
+90 5 helados
+12
+5 CREMOSO
+30 5 helados
+5
+6 vellezo
+80 5 helados
+75
+7 Grido
+900 5 helados
+85
+8 Gustito
+4 5 helados
+45
+9 Bernal
+44 5 helados
+45.00
+10 FrioComoPechoDeJoaco
+55 5 helados
+45
+11 Massas
+30 5 helados
+45
+12 Heladeria Son Goku
+20 5 helados
+45
+13 Heladeria Fredo
+70 5 helados
+45
