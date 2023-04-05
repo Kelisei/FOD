@@ -1,0 +1,20 @@
+5 nombreNac5
+apellidoNac5
+calleNac5
+5 5 5nac
+ciudadNac5
+matriculaNac5
+madreNac5
+dniMadre5
+padreNac5
+dniPadre5
+6 nombreNac6
+apellidoNac6
+calleNac6
+6 6 6nac
+ciudadNac6
+matriculaNac6
+madreNac6
+dniMadre6
+padreNac6
+dniPadre6

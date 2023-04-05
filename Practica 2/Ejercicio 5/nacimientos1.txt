@@ -1,0 +1,20 @@
+1 nombreNac1
+apellidoNac1
+calleNac1
+1 1 1nac
+ciudadNac1
+matriculaNac1
+madreNac1
+dniMadre1
+padreNac1
+dniPadre1
+2 nombreNac2
+apellidoNac2
+calleNac2
+2 2 2nac
+ciudadNac2
+matriculaNac2
+madreNac2
+dniMadre2
+padreNac2
+dniPadre2

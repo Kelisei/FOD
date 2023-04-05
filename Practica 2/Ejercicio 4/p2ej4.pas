@@ -47,7 +47,7 @@ procedure merge (vDetalles: arrDetalle; var mae : maestro);
       min.cod_usuario:=valor_alto;
       min.fecha:= 99999999;
       for i:=1 to 5 do begin
-        if ((regInformes[i].cod_usuario <= min.cod_usuario)and(regInformes[i].fecha <= min.fecha)) then begin
+        if ((regInformes[i].cod_usuario <= min.cod_usuario) and (regInformes[i].fecha <= min.fecha)) then begin
             min:=regInformes[i];
             pos:=i;
         end;

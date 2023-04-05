@@ -1,0 +1,8 @@
+3 dniFal3
+nombreFal3
+apellidoFal3
+matriculaFal3
+medicoFal3
+fechaFal3
+21.21
+lugarFal3

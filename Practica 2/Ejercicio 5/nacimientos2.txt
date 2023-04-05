@@ -1,0 +1,20 @@
+3 nombreNac3
+apellidoNac3
+calleNac3
+3 3 3nac
+ciudadNac3
+matriculaNac3
+madreNac3
+dniMadre3
+padreNac3
+dniPadre3
+4 nombreNac4
+apellidoNac4
+calleNac4
+4 4 4nac
+ciudadNac4
+matriculaNac4
+madreNac4
+dniMadre4
+padreNac4
+dniPadre4

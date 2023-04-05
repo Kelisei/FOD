@@ -1,0 +1,24 @@
+Nombre del producto: Leche 
+Codigo del producto:1
+Precio del producto:80
+Stock Actual del producto:49
+Stock Minimo del producto:50
+ 
+Nombre del producto: Azúcar 
+Codigo del producto:2
+Precio del producto:45
+Stock Actual del producto:14
+Stock Minimo del producto:25
+ 
+Nombre del producto: Papas 
+Codigo del producto:3
+Precio del producto:50
+Stock Actual del producto:15
+Stock Minimo del producto:20
+ 
+Nombre del producto: Pan 
+Codigo del producto:5
+Precio del producto:30
+Stock Actual del producto:20
+Stock Minimo del producto:30
+ 

@@ -1,0 +1,1 @@
+minimoNac(vDetNac, vRegNac, minNac);
