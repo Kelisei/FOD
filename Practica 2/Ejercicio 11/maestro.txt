@@ -1,0 +1,12 @@
+Buenos Aires
+500
+700
+Córdoba
+300
+400
+Mendoza
+200
+350
+Santa Fe
+400
+600

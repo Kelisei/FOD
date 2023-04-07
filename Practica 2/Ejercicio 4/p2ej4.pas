@@ -75,8 +75,8 @@ begin
     while (min.cod_usuario <> valor_alto) do begin
       actual.cod_usuario:= min.cod_usuario;
       while (actual.cod_usuario = min.cod_usuario) do begin
-        actual.fecha:= min.fecha;
         actual.tiempo_total_de_sesiones_abiertas := 0;
+        actual.fecha:= min.fecha;
         while (actual.fecha = min.fecha) do begin
             actual.tiempo_total_de_sesiones_abiertas:= actual.tiempo_total_de_sesiones_abiertas + min.tiempo_sesion;
             minimo(vDetalles,regInformes, min);

@@ -1,0 +1,24 @@
+Buenos Aires
+001
+100
+700
+Buenos Aires
+002
+300
+400
+Córdoba
+001
+200
+350
+Córdoba
+002
+400
+600
+Mendoza
+001
+150
+250
+Mendoza
+002
+250
+350

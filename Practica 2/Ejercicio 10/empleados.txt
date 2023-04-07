@@ -1,0 +1,30 @@
+Departamento: Ventas
+1
+101
+3
+10
+Departamento: Ventas
+1
+102
+2
+20
+Departamento: Ventas
+2
+201
+4
+30
+Departamento: Finanzas
+1
+301
+1
+40
+Departamento: Finanzas
+2
+302
+3
+50
+Departamento: Recursos Humanos
+1
+401
+2
+60
