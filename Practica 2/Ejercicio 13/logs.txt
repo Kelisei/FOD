@@ -1,0 +1,15 @@
+1
+usuario1
+Juan
+Perez
+10
+2
+usuario2
+María
+Gómez
+5
+3
+usuario3
+Pedro
+López
+8
