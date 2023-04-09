@@ -1,0 +1,12 @@
+Destino1
+Fecha1
+123
+50
+Destino2
+Fecha2
+456
+100
+Destino3
+Fecha3
+789
+75
