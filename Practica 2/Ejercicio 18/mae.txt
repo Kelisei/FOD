@@ -5,7 +5,7 @@ Municipio1
 1001
 Hospital1
 20230101
-10
+20000
 2
 Localidad2
 101
