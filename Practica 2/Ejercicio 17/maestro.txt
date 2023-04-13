@@ -1,0 +1,30 @@
+001 
+Producto 1 
+Descripción 1 
+Modelo 1 
+Marca 1 
+10
+002 
+Producto 2 
+Descripción 2 
+Modelo 2 
+Marca 2 
+20
+003 
+Producto 3 
+Descripción 3 
+Modelo 3 
+Marca 3 
+5
+004 
+Producto 4 
+Descripción 4 
+Modelo 4 
+Marca 4 
+15
+005 
+Producto 5 
+Descripción 5 
+Modelo5 
+Marca 5 
+8

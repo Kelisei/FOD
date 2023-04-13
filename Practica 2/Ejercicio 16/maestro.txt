@@ -1,0 +1,24 @@
+20220101
+101
+Producto1
+Descripción del Producto1
+10.99
+50
+20220102
+102
+Producto2
+Descripción del Producto2
+15.50
+25
+20220103
+103
+Producto3
+Descripción del Producto3
+5.75
+100
+20220104
+104
+Producto4
+Descripción del Producto4
+8.25
+75

@@ -87,7 +87,6 @@ procedure modificarMaestro(var mae:maestro; var list: lista);
 var
     det1: detalle; det2: detalle; aux1, aux2, min: datoDetalle; regMae:datoMaestro; valor:integer;
 begin
-    if(list = nil) then WriteLn('nil');
     WriteLn('Introduzca un valor');
     ReadLn(valor);
     Assign(mae, 'maestro');
@@ -99,27 +98,33 @@ begin
     minimo(det1, det2, aux1, aux2, min);
     while(min.destino <> valorAltoS) do begin
         read(mae, regMae);
-        while(regMae.destino <> min.destino) or (regMae.fecha <> min.fecha) or (regMae.horaDeSalida <> min.horaDeSalida) do 
+        while(regMae.destino <> min.destino) or (regMae.fecha <> min.fecha) or (regMae.horaDeSalida <> min.horaDeSalida) do begin
             read(mae , regMae);
+            if(valor > regMae.asientosDisponibles) then
+                agregarInicio(list, regMae);    
+        end;
         while((regMae.destino = min.destino )and (regMae.fecha = min.fecha) and (regMae.horaDeSalida = min.horaDeSalida)) do begin
             regMae.asientosDisponibles := regMae.asientosDisponibles - min.asientosComprados;
             minimo(det1, det2, aux1, aux2, min);
         end;
         Seek(mae, FilePos(mae)-1);
         write(mae, regMae);
+    end;
+    if(valor > regMae.asientosDisponibles) then
+        agregarInicio(list, regMae);
+    while not eof(mae) do
         if(valor > regMae.asientosDisponibles) then
             agregarInicio(list, regMae);
-    end;
     Close(mae);
     Close(det1); Close(det2);
-    {
+    
     Reset(mae);
     while not eof(mae) do begin
         read(mae, regMae);
         writeln(regMae.destino, ' ', regMae.asientosDisponibles);      
     end;
     recorrerLista(list);
-    }
+    
 end;
 var
     mae:maestro; list:lista;
