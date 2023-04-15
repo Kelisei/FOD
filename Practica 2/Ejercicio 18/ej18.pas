@@ -97,11 +97,16 @@ begin
         reg.codHosp:=valorAlto;
     end;
 end;
+procedure agregarTxt(var txt: text; nombreLoc:String; nombreMun:String; casos:Integer);
+begin
+    Writeln(txt, casos,' ',nombreLoc);
+    Writeln(txt, nombreMun);
+end;
 procedure CorteDeControl(var m:mae);
 var
-    reg, actual:datoMae; totalMun, totalLoc, totalPcia, totalHosp:integer;
+    reg, actual:datoMae; totalMun, totalLoc, totalPcia, totalHosp:integer; txt:text;
 begin
-    Reset(m);
+    Reset(m); Assign(txt, 'municipios+1500.txt'); Rewrite(txt);
     Leer(m, reg);
     {Cantidad de casos Municipio N
     Cantidad de casos Localidad N
@@ -129,11 +134,15 @@ begin
             end;
             totalLoc:= totalLoc + totalMun;
             Writeln('Total del municipio:', totalMun);
+            if(totalMun > 1500) then
+                agregarTxt(txt, actual.nomLoc, actual.nomMun, totalMun);
         end;
         totalPcia:= totalPcia + totalLoc;
         Writeln('Total de la localidad:', totalLoc);
     end;
     Writeln('Total de la provincia:', totalPcia);
+    Close(m);  
+    Close(txt);
 end;
 var
     m:mae;
