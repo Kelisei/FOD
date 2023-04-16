@@ -1,0 +1,12 @@
+BASURA
+0
+Violeta
+1
+Rosa
+2
+Amapola
+3
+Cordeptero
+4
+Diente de leon
+5
