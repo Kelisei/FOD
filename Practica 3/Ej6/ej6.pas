@@ -74,7 +74,8 @@ begin
         while(aux <> reg.cod) do read(mae, reg);
         Seek(mae, FilePos(mae)-1);
         reg.cod:= reg.cod * -1;
-        Write(mae, reg);
+        Write(mae, reg); 
+        Seek(mae, 0);
         leer(det, aux);        
     end;
     Close(mae); Close(det);
