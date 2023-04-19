@@ -1,0 +1,30 @@
+Red Hat
+2000
+3
+10000
+Sistema de seguridad de alto nivel
+Ubuntu
+2010
+4
+12000
+Sistema de uso comun mas distribuido
+White Hat
+2000
+3
+10000
+Sistema de seguridad de alto nivel
+Arch
+2010
+4
+12000
+Sistema de uso comun mas distribuido
+Purple Hat
+2000
+3
+10000
+Sistema de seguridad de alto nivel
+Lubuntu
+2010
+4
+12000
+Sistema de uso comun mas distribuido

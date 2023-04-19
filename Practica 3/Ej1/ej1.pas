@@ -41,7 +41,7 @@ begin
     Read(mae, aux);
     Seek(mae, pos);
     Write(mae, aux);
-    Seek(mae,  FileSize(mae)-2);
+    Seek(mae,  FileSize(mae)-1);
     Truncate(mae);
     Close(mae);
 end;

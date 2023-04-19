@@ -13,11 +13,16 @@ begin
   Writeln ('Filesize before Truncate : ',FileSize(F));
   Close (f);
   Reset (F);
-  Repeat
-    Read (F,I);
-  Until i=5;
+  Seek(f, 5);
   Truncate (F);
+  Writeln(I);
   Writeln ('Filesize after Truncate  : ',Filesize(F));
   Close (f);
+  Reset(F);
+  while not eof(F) do begin
+      read(F, I);
+      WriteLn(I);
+  end;
+  Close(F);
 end.
 
