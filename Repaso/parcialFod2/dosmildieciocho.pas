@@ -17,16 +17,15 @@ begin
 end;
 procedure Informe(var arch:archivo);
 var
-    anioElegido, mes, dia:integer; actual:acceso; encontre:Boolean; totalMes, totalDia, totalAnio:integer;
+    anioElegido, mes, dia, usuario:integer; actual:acceso; totalMes, totalDia, totalAnio, totalUsuario:integer;
 begin
     Readln(anioElegido);
-    encontre:=False;
     Reset(arch);
-    while((not eof(arch)) and (not encontre)) do begin
-        read(arch, actual);
-        if(actual.anio)= anioElegido then encontre:=True;
+    Leer(arch, actual);
+    while((actual.anio <> valorAlto) and (actual.anio <> anioElegido)) do begin
+        Leer(arch, actual)
     end;
-    if(encontre) then begin
+    if(actual.anio = anioElegido) then begin
         Writeln('Anio ', actual.anio);
         totalAnio:=0;
         while(actual.anio = anioElegido) do begin
@@ -38,10 +37,15 @@ begin
                 totalDia:=0;
                 Writeln('        dia ', actual.dia);
                 while((actual.anio = anioElegido) and (actual.mes = mes) and (actual.dia = dia)) do begin
-                    Writeln('          ', actual.idUsuario,' Tiempo Total de acceso en el dia ', dia,' mes ',mes);
-                    Writeln('          ', actual.tiempoAcceso);
-                    totalDia:=actual.tiempoAcceso+totalDia;
-                    Leer(arch, actual);
+                    usuario:=actual.idUsuario;
+                    totalUsuario:=0;
+                    Writeln('          Usuario:', usuario,' Tiempo Total de acceso en el dia ', dia,' mes ',mes);
+                    while((actual.anio = anioElegido) and (actual.mes = mes) and (actual.dia = dia) and (actual.idUsuario = usuario)) do begin
+                        totalUsuario:=totalUsuario+actual.tiempoAcceso;
+                        Leer(arch, actual);
+                    end;
+                    Writeln('          ', totalUsuario);
+                    totalDia:=totalUsuario+totalDia;
                 end;
                 Writeln('        Tiempo Total de acceso dia ', dia, ' mes ', mes);
                 Writeln('        ',totalDia);

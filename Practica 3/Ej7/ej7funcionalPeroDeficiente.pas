@@ -83,7 +83,7 @@ begin
 			leer(mae,reemplazo);        
 			Seek(mae,pos);
 			Write(mae,reemplazo);       //Escribimos el reemplazo
-			Seek(mae,filesize(a)-1);
+			Seek(mae,filesize(mae)-1);
 			Truncate(mae);
             Seek(mae,pos);              //Volvemos para atras (chequeamos si el reemplazo estaba eliminado)
         end;
