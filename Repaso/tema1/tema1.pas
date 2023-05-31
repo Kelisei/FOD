@@ -67,14 +67,14 @@ begin
 end;
 
 procedure agregarDinosaurios (var a: tArchDinos ; registro: recordDinos);    
-    procedure noExisteDino(var a:archivo; dino:integer);
+    function noExisteDino(var a:archivo; dino:integer):boolean;
     var
         aux: recordDinos;
     begin
         reset(a);
         while (not eof(a))and(aux.codigo<>dino) do read(a,aux);
         close(a);
-        return(aux.codigo<>dino);
+        noExisteDino:= aux.codigo<>dino;
 
     end;
 var
@@ -121,6 +121,7 @@ var
 begin
     Assign(txt, 'listado.txt');
     Rewrite(txt);
+    Reset(arch);
     while not eof(arch) do begin
         read(arch, reg);
         if(reg.codigo > 0) then begin
@@ -130,6 +131,7 @@ begin
         end;       
     end;
     Close(txt);
+    Close(arch);
 end;
 
 var
