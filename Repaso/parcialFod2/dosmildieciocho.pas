@@ -22,7 +22,7 @@ begin
     Readln(anioElegido);
     Reset(arch);
     Leer(arch, actual);
-    while((actual.anio <> valorAlto) and (actual.anio <> anioElegido)) do begin
+    while((actual.anio <> valorAlto) and (actual.anio < anioElegido)) do begin
         Leer(arch, actual)
     end;
     if(actual.anio = anioElegido) then begin

@@ -93,7 +93,9 @@ begin
             write(reemplazo, aux);
     end;
     Close(mae);
-    Erase(mae); Close(reemplazo);
+    Erase(mae);
+    Close(reemplazo);
+    Rename(reemplazo, 'maestro.dat');
 end;
 procedure listar(var mae:maestro);
 var

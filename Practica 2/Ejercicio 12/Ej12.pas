@@ -48,11 +48,7 @@ const
     valorAlto = 9999;
 type
     acceso = record
-        anio:integer;
-        mes:integer;
-        dia:integer;
-        idUsuario:integer;
-        tiempoDeAcceso:integer;
+        anio,mes,dia,idUsuario,tiempoDeAcceso:integer;
     end;
     maestro = file of acceso;
 procedure leer(var mae:maestro; var aux: acceso);
