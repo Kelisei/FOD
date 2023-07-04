@@ -1,1 +1,0 @@
-Archivo creado con el unico fin que GitLab no elimine la carpeta csv_files. Necesaria para la ejecucion de la app

@@ -1,1 +1,0 @@
-# Acá van todos los json, debe tener este readme para que se persista la carpeta.
